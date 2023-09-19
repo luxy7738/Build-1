@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("tea.jpg");
+    background-image: url("pics/tea.jpg");
     background-size: cover;
 }
 body::before {
