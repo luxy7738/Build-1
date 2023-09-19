@@ -86,3 +86,11 @@ footer {
     border-radius: 5px;
     margin: 0 10px;
 }
+
+.logo-container {
+    background-image: url('Tea Time.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px; 
+    height: 350px;
+}
