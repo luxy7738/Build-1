@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Tea Time</title>
-    <link rel="stylesheet" href="intro.css"
+    <link rel="stylesheet" href="intro.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </head>
   <body>
     <header>
@@ -42,7 +46,39 @@
             <img src="pics/Tea 2.jpg" alt="Tea Image 2" width="300" height="350">
             <img src="pics/Tea 3.jpg" alt="Tea Image 3" width="300" height="350">
         </div>
-    </main>
+      </main>
+        <!-- Carousel -->
+
+        <section id="slide">
+          <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="carousel-pic" src="pics/black_tea.png" >
+                </div>
+                <div class="carousel-item">
+                  <img class="carousel-pic" src="pics/olong_tea.png" >
+                </div>
+                <div class="carousel-item">
+                  <img class="carousel-pic" src="pics/green_tea.png" >
+                </div>
+                <div class="carousel-item">
+                  <img class="carousel-pic" src="pics/hibicus_tea.png" >
+                </div>
+                <div class="carousel-item">
+                  <img class="carousel-pic" src="pics/white_tea.png" >
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </section>
+
 
     <footer>
         <div class="row2">

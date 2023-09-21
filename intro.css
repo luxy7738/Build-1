@@ -94,3 +94,13 @@ footer {
     width: 400px; 
     height: 350px;
 }
+
+#slide{
+    background-color:gray;
+    text-align: center;
+    padding: 20px;
+  }
+  .carousel-pic{
+    width: 500px;
+    height: 500px
+  }
