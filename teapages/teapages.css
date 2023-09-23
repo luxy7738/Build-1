@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#logo {
+    border-radius: 12px;
+}
+
+.description {
+    text-align: left;
+}
+
+.row {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.recommend {
+    float: left;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+.clear {
+    clear: both;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+
+footer {
+    clear: both;
+    text-align: left;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+}
