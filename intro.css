@@ -71,7 +71,7 @@ footer {
 .vertical-line {
     width: 1px;
     height: 80%;
-    background-color: #ccc;
+    background-color: white;
 }
 
 .image-container {
@@ -100,7 +100,8 @@ footer {
     text-align: center;
     padding: 20px;
   }
-  .carousel-pic{
+.carousel-pic{
     width: 500px;
     height: 500px
   }
+

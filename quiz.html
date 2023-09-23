@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Tea_Quiz</title>
+</head>
+<body>
+    <a href="intro.html">
+        <img src="pics/time.png" id="logo" alt="logo" width="300" height="300">
+      </a>
+        <hr>
+    <div class="quiz-container">
+        <h1>What tea is best for you?</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Are you a morning or night person?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> Morning
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> Night
+                </label>
+            </div>
+
+            <div class="question">
+                <p>2. Do you like indoor or outdoor?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> Indoor
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> Outdoor
+                </label>
+            
+            </div>
+
+            <div class="question">
+                <p>3. Do you prefer hot or cold?</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> Hot
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> Cold
+                </label>
+            
+            </div>
+
+            <div class="question">
+                <p></p>
+                <label>
+                    <input type="radio" name="q4" value="a"> Hot
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> Cold
+                </label>
+            
+            </div>
+
+            <div class="question">
+                <p>3. Do you prefer hot or cold?</p>
+                <label>
+                    <input type="radio" name="q5" value="a"> Hot
+                </label>
+                <label>
+                    <input type="radio" name="q5l" value="b"> Cold
+                </label>
+            
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="row2">
+          <br>
+          <br>
+          <hr>
+          <div class="column2">
+            <img src="pics/time.png" width="60" height="60" alt="smalllogo">
+            <strong>&#169;2023 Tea Time</strong>
+          </div>
+  
+    
+          <div class="column2">
+            <h2>Subscribe</h2>
+            <p>Sign up to be notified of specials and discounts</p>
+            <input type="text" name="email" size="40" placeholder="Your Email">
+            <input type="submit" name="submit" value="Sign Up"><br>
+            <a href="https://www.instagram.com/arizonastateuniversity/"><img src="pics/bwinsta.png" width="40" alt="insta"></a>
+            <a href="https://www.facebook.com/arizonastateuniversity/"><img src="pics/bwfacebook.png" width="40" alt="face"></a>
+          
+          </div>
+    
+        </div>
+      </footer>
+</body>
+</html>
+
+<script>
+    document.getElementById("quiz-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Define the correct answers
+        const correctAnswers = {
+            q1: "1",
+            q2: "1",
+            // Add more correct answers for each question
+        };
+
+        // Initialize the score
+        let score = 0;
+
+        // Loop through each question
+        for (const questionId in correctAnswers) {
+            const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+
+            if (selectedOption) {
+                const selectedValue = selectedOption.value;
+
+                if (selectedValue === correctAnswers[questionId]) {
+                    score++;
+                }
+            }
+        }
+
+        // Display the score (you can customize this part)
+
+        alert(`Your score is: ${score}/${Object.keys(correctAnswers).length}`);
+    });
+</script>

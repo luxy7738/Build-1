@@ -1,0 +1,65 @@
+/* Basic styles for the quiz container */
+hr{
+    background-color: black;
+    height: 2px;
+    border: none;
+  }
+  
+footer{
+    clear: both;
+    text-align: left;
+  }
+
+.column2{
+    float: left;
+    width: 50%;
+    
+  }
+  
+body{
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+  }
+  
+#logo {
+    border-radius: 12px;
+  }
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for questions and answer options */
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
