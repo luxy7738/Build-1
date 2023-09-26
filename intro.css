@@ -20,6 +20,9 @@ nav {
     padding: 0;
     overflow: hidden;
     background-color: rgb(107, 125, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   li {
     float: left;
@@ -34,7 +37,7 @@ nav {
   }
   
   li a:hover {
-    background-color: white;
+    background-color: rgb(246,239,220);
   }
 
 .about-us {
@@ -97,8 +100,4 @@ footer{
     float: left;
     width: 50%;
     
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
