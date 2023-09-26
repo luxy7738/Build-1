@@ -17,7 +17,8 @@ footer{
   }
   
 body{
-    background-image:url("pics/quiz_background.png") ;
+    background-image:url("pics/Tea 1.jpg") ;
+    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
   }
