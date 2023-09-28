@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quiz.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Tea_Quiz</title>
 </head>
 <body>
     <header>
     <a href="intro.html">
         <img src="pics/time.png" id="logo" alt="logo" width="300" height="300">
-      </a>
+    </a>
+    <div class="container">
+        <button class="loginbutton">
+            <span>
+                <b><a href="login.html" class="login-link">Log out</a></b>
+            </span>
+        </button>
+    </div>
     <nav>
         <ul class="NavPage">
             <li><b><a href="intro.html">Home</a></b></li>
@@ -23,6 +32,7 @@
 
     <div class="quiz-container">
         <h1>What tea is the best for you?</h1>
+        <br>
         <form id="quiz-form">
             <div class="question">
                 <p>1. Are you a morning or night person?</p>
