@@ -1,6 +1,4 @@
 body {
-    background-image:url("pics/TeaPageBackground(1).jpg");
-    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
@@ -24,7 +22,6 @@ body {
 }
 
 .column {
-    
     float: left;
     width: 50%;
 }

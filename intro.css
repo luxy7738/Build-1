@@ -48,6 +48,7 @@ li a:hover {
 
 }
 
+
 .about-us {
   background-color: rgb(107, 125, 92); 
   padding: 50px;
@@ -78,8 +79,8 @@ li a:hover {
 
 /* Style the list items within the ul */
 .about-us ul li { 
-  margin-bottom: 8px; /* Reduced margin between list items */
-  color: black /* Adjusted text color */
+  margin-bottom: 8px; 
+  color: black
 }
 
 
@@ -122,3 +123,4 @@ footer {
   float: left;
   width: 50%;
 }
+
