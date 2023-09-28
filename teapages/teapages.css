@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    background-image:url("pics/TeaPageBackground(1).jpg");
+    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
@@ -23,6 +24,7 @@ body {
 }
 
 .column {
+    
     float: left;
     width: 50%;
 }
@@ -47,3 +49,43 @@ footer {
     float: left;
     width: 50%;
 }
+
+header {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 5px 0 10px 0;
+  }
+  
+  /* Navigation Bar Styles */
+  .NavPage {
+    border-radius: 10px;
+    background-color: rgb(107, 125, 92);
+    overflow: hidden;
+  }
+  
+  .NavPage ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+  }
+  
+  
+  .NavPage li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .NavPage li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .NavPage li a:hover {
+    background-color: rgb(246, 239, 220);
+  }

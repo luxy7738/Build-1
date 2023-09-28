@@ -76,7 +76,6 @@ width: 50%;
   background: #009933;
   color: #fff;
   font-size: 20px;
-}
    border: none;
   border-radius: 25px;
 }
@@ -87,7 +86,6 @@ width: 50%;
   justify-content: space-between;
   color: #cccccc;
 }
--
 .remember-forgot a {
   font-size: 15px; 
   color: #cccccc;
