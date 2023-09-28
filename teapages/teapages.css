@@ -1,3 +1,46 @@
+/* Login button */
+.loginbutton {
+  background-color: rgb(107, 125, 92);
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px 50px; /* Adjust margin as needed to control the distance from the top-right corner */
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.loginbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.loginbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.loginbutton:hover span {
+  padding-right: 25px;
+}
+
+.loginbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Remove the blue text color and underline from the link */
+.login-link {
+  text-decoration: none;
+  color: inherit; 
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
