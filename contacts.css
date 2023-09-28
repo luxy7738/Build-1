@@ -43,6 +43,7 @@
 
 body{
   background-image: url(pics/TeaContactBackground\(2\).jpg);
+  background-size: cover;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
