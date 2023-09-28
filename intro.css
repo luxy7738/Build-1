@@ -1,103 +1,170 @@
-body{
-    background-image: url("pics/Tea 1.jpg");
-    background-size: cover;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-  }
+/* General Styles */
+body {
+  background-image: url("pics/TeaQuizBackground\(1\).jpg");
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
 
+/* Header Styles */
 #logo {
-    border-radius: 12px;
+  border-radius: 12px;
 }
-header {
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    padding: 10px 0 10px 0;
+
+
+
+.loginbutton {
+  background-color: rgb(107, 125, 92);
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px 50px; /* Adjust margin as needed to control the distance from the top-right corner */
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
 }
+
+.loginbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.loginbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.loginbutton:hover span {
+  padding-right: 25px;
+}
+
+.loginbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Remove the blue text color and underline from the link */
+.login-link {
+  text-decoration: none;
+  color: inherit; 
+}
+
+  header {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+/* Navigation Styles */
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(107, 125, 92);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: rgb(246,239,220);
-  }
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(107, 125, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(246, 239, 220);
+
+}
+
 
 .about-us {
-    background-color: rgb(107, 125, 92); 
-    padding: 50px;
-    border-radius: 3px;
-    border: 2px;
-    text-align: center;
+  background-color: rgb(107, 125, 92); 
+  padding: 50px;
+  border-radius: 10px;
+  border: 50px;
+  text-align: center;
 }
 
 .about-us h2 {
-    font-size: 24px;
-    color: black;
+  font-size: 24px;
+  color: black;
 }
 
 .about-us p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
 }
 
 .about-us ul {
-    list-style: disc;
-    padding: 20px 50px 75px 100px;
-    text-align: left;
-    margin-top: 10px;
-    color: black;
+  list-style: disc;
+  padding: 20px 50px 75px 100px;
+  text-align: left;
+  margin-top: 10px;
+  color: black;
 }
 
-hr{
+
+/* Style the list items within the ul */
+.about-us ul li { 
+  margin-bottom: 8px; 
+  color: black
+}
+
+
+/* Horizontal Rule Styles */
+hr {
   background-color: black;
   height: 2px;
   border: none;
 }
 
+/* Logo Container Styles */
 .logo-container {
-    background-image: url('Tea Time.jpg'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 400px; 
-    height: 350px;
+  background-image: url('Tea Time.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 350px;
 }
 
-#slide{
-    background-color:rgb(107, 125, 92);
-    text-align: center;
-    padding: 20px;
-  }
-.carousel-pic{
-    width: 500px;
-    height: 500px
-  }
-
-footer{
-    clear: both;
-    text-align: left;
-    
-  }
-.column2{
-    float: left;
-    width: 50%;
-    
+/* Slide (Carousel) Section Styles */
+#slide {
+  background-color: none;
+  text-align: center;
+  padding: 10px 0 0 10px;
 }
+
+.carousel-pic {
+  border-radius: 50px;
+  width: 500px;
+  height: 500px;
+}
+
+/* Footer Styles */
+footer {
+  clear: both;
+  text-align: left;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+}
+

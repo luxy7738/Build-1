@@ -1,12 +1,49 @@
 body{
   background-color: white;
-  background-size: cover;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
 #logo {
   border-radius: 12px;
+}
+
+header {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+/* Navigation Bar Styles */
+.NavPage {
+  border-radius: 10px;
+  background-color: rgb(107, 125, 92);
+  overflow: hidden;
+}
+
+.NavPage ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.NavPage li {
+  float: left;
+}
+
+.NavPage li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.NavPage li a:hover {
+  background-color: rgb(246, 239, 220);
 }
 
 .column{
