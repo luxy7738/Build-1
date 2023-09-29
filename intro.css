@@ -11,9 +11,7 @@ body {
   border-radius: 12px;
 }
 
-.title{
-  color: rgb(246, 239, 220);
-}
+
 /* Login button */
 .loginbutton {
   background-color: rgb(107, 125, 92);
@@ -104,8 +102,8 @@ li a:hover {
 }
 
 .about-us h2 {
-  font-size: 24px;
-  color: black;
+  font-size: 30 px;
+  color: rgb(246, 239, 220);
 }
 
 .about-us p {
