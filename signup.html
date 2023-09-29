@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+  <script src="/js/validation.js" defer></script>
+  
+  
+</head>
+
+<body>
+  
+    <section class = "login-form">
+        <img src="pics/time.png" width="225" height="200" class="center">
+        <form action="process-signup.php" method="post" id="signup" novalidate>
+            <div class = "int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="User Name">User  frickin Name</label>
+            </div>
+            <div class = "int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="password">Password</label>
+            </div>
+          
+            <div class="remember-forgot">
+              <label><input type="checkbox"> Remember me</label>
+              <a href="">Forgot Password?</a>
+            </div>
+            
+            
+            <div class="btn-area">
+            <button id="btn">Sign up</button>
+            </div>
+        </form>
+      
+        <div class="register-link">
+            <p>Don't have an account? <a 
+              href=""> Register</a></p>
+        </div>
+    </section>
+
+</body>
+
+</html>
+    
