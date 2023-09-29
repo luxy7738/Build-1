@@ -49,12 +49,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php endif; ?>
     
     <form method="post">
-        <label for="username">username</label>
-        <input type="username" name="usernmae" id="username"
-               value="<?= htmlspecialchars($_POST["username"] ?? "") ?>">
+        <label for="User Name">username</label>
+        <input type="text" name="id" id="id"
+               value="<?= htmlspecialchars($_POST["id"] ?? "") ?>">
         
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="pw" id="pw">
         
         <button>Log in</button>
     </form>
