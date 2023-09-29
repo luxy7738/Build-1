@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     $sql = sprintf("SELECT * FROM user
                     WHERE username = '%s'",
-                   $mysqli->real_escape_string($_POST["username"]));
+                   $mysqli->real_escape_string($_POST["id"]));
     
     $result = $mysqli->query($sql);
     
