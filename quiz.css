@@ -139,12 +139,12 @@ header {
 
 .NavPage li a {
   display: block;
-  color: black;
+  color: rgb(246, 239, 220);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .NavPage li a:hover {
-  background-color: rgb(246, 239, 220);
+  background-color: rgb(31, 41, 37);
 }

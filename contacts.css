@@ -1,7 +1,7 @@
 /* Login button */
 .loginbutton {
   background-color: rgb(107, 125, 92);
-  color: black;
+  color: rgb(246, 239, 220);
   position: absolute;
   top: 0;
   right: 0;
@@ -42,8 +42,8 @@
 }
 
 body{
-  background-image: url(pics/TeaContactBackground\(2\).jpg);
   background-size: cover;
+  background-image: url(pics/TeaContactBackground\(2\).jpg);
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
@@ -80,14 +80,14 @@ header {
 
 .NavPage li a {
   display: block;
-  color: black;
+  color: rgb(246, 239, 220);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .NavPage li a:hover {
-  background-color: rgb(246, 239, 220);
+  background-color: rgb(31, 41, 37);
 }
 
 .column{

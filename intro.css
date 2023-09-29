@@ -17,7 +17,7 @@ body {
 /* Login button */
 .loginbutton {
   background-color: rgb(107, 125, 92);
-  color: black;
+  color: rgb(246, 239, 220);
   position: absolute;
   top: 0;
   right: 0;
@@ -72,6 +72,7 @@ nav {
   padding: 0;
   overflow: hidden;
   background-color: rgb(107, 125, 92);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,17 +84,16 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: rgb(246, 239, 220);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: rgb(246, 239, 220);
+  background-color: rgb(31, 41, 37);
 
 }
-
 
 .about-us {
   background-color: rgb(107, 125, 92); 
@@ -103,7 +103,7 @@ li a:hover {
   text-align: center;
 }
 
-h2 {
+.about-us h2 {
   font-size: 24px;
   color: black;
 }
@@ -131,7 +131,7 @@ h2 {
 
 
 /* Horizontal Rule Styles */
-hr{
+hr {
   background-color: black;
   height: 2px;
   border: none;

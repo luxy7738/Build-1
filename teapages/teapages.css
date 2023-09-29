@@ -1,7 +1,7 @@
 /* Login button */
 .loginbutton {
   background-color: rgb(107, 125, 92);
-  color: black;
+  color: rgb(246, 239, 220);
   position: absolute;
   top: 0;
   right: 0;
@@ -51,25 +51,30 @@ body {
 }
 
 .description {
-    text-align: left;
+  color:rgb(246, 239, 220) ;
+  text-align: left;
 }
 
 .row {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
+  background-color: rgb(107, 125, 92);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .recommend {
     float: left;
 }
 
-.column {
+.column { 
     float: left;
     width: 50%;
 }
 
-
+h1{
+  color: rgb(246, 239, 220);
+}
 .clear {
     clear: both;
 }
@@ -120,12 +125,12 @@ header {
   
   .NavPage li a {
     display: block;
-    color: black;
+    color: rgb(246, 239, 220);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   .NavPage li a:hover {
-    background-color: rgb(246, 239, 220);
+    background-color: rgb(31, 41, 37);
   }
