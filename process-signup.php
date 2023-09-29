@@ -27,7 +27,7 @@ if ( ! $stmt->prepare($sql)) {
     die("SQL error: " . $mysqli->error);
 }
 
-$stmt->bind_param("sss",
+$stmt->bind_param("ss",
                   $_POST["id"],
                   $_POST["pw"]);
                   
