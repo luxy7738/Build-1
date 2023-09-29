@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
-<body style="background-image: url('pics/time.png'); background-size: cover;">
+<body style="background-image: url('pics/tea.jpg'); background-size: cover;">
     
     <h1>Login</h1>
     
