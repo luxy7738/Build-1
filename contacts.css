@@ -1,11 +1,93 @@
+/* Login button */
+.loginbutton {
+  background-color: rgb(107, 125, 92);
+  color: rgb(246, 239, 220);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px 50px; /* Adjust margin as needed to control the distance from the top-right corner */
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.loginbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.loginbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.loginbutton:hover span {
+  padding-right: 25px;
+}
+
+.loginbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Remove the blue text color and underline from the link */
+.login-link {
+  text-decoration: none;
+  color: inherit; 
+}
+
 body{
-  background-color: white;
+  background-size: cover;
+  background-image: url(pics/TeaContactBackground\(2\).jpg);
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
 #logo {
   border-radius: 12px;
+}
+
+header {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+/* Navigation Bar Styles */
+.NavPage {
+  border-radius: 10px;
+  background-color: rgb(107, 125, 92);
+  overflow: hidden;
+}
+
+.NavPage ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.NavPage li {
+  float: left;
+}
+
+.NavPage li a {
+  display: block;
+  color: rgb(246, 239, 220);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.NavPage li a:hover {
+  background-color: rgb(31, 41, 37);
 }
 
 .column{
@@ -29,4 +111,30 @@ footer{
   float: left;
   width: 50%;
   
+}
+
+.intronav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(107, 125, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(246,239,220);
 }

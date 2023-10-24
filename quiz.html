@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="pics/time.png">
+
+    <title>Tea_Quiz</title>
+</head>
+<body>
+    <header>
+    <a href="intro.html">
+        <img src="pics/time.png" id="logo" alt="logo" width="300" height="300">
+    </a>
+    <div class="container">
+        <button class="loginbutton">
+            <span>
+                <b><a href="signup.html" class="login-link">Log out</a></b>
+            </span>
+        </button>
+    </div>
+    <nav>
+        <ul class="NavPage">
+            <li><b><a href="intro.html">Home</a></b></li>
+            <li><b><a href="contact.html">Contact</a></b></li>
+            <li><b><a href="teapages/blacktea.html">Tea</a></b></li>
+            <li><b><a href="quiz.html">Quiz</a></b></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="quiz-container">
+        <h1>What tea is the best for you?</h1>
+        <br>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Are you a morning or night person?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> Morning
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> Night
+                </label>
+            </div>
+
+            <div class="question">
+                <p>2. Do you like indoor or outdoor?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> Indoor
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> Outdoor
+                </label>
+            
+            </div>
+
+            <div class="question">
+                <p>3. Do you prefer hot or cold?</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> Hot
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> Cold
+                </label>
+            
+            </div>
+
+            <div class="question">
+                <p>4. Do you prefer beach or mountain?</p>
+                <label>
+                    <input type="radio" name="q4" value="a"> Beach
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> Mountain
+                </label>
+            
+            </div>
+
+            <div class="question">
+                <p>5. Do you consider yourself introverted or extroverted?</p>
+                <label>
+                    <input type="radio" name="q5" value="a"> Introverted
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b"> Extroverted
+                </label>
+            
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="row2">
+          <br>
+          <br>
+          <hr>
+          <div class="column2">
+            <img src="pics/time.png" width="60" height="60" alt="smalllogo">
+            <strong>&#169;2023 Tea Time</strong>
+          </div>
+  
+    
+          <div class="column2">
+            <h2>Subscribe</h2>
+            <p>Sign up to be notified of specials and discounts</p>
+            <input type="text" name="email" size="40" placeholder="Your Email">
+            <input type="submit" name="submit" value="Sign Up"><br>
+            <a href="https://www.instagram.com/arizonastateuniversity/"><img src="pics/bwinsta.png" width="40" alt="insta"></a>
+            <a href="https://www.facebook.com/arizonastateuniversity/"><img src="pics/bwfacebook.png" width="40" alt="face"></a>
+          
+          </div>
+    
+        </div>
+      </footer>
+</body>
+</html>
+
+<script>
+    document.getElementById("quiz-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Define the correct answers
+        const correctAnswers = {
+            q1: "a",
+            q2: "a",
+            q3: "a",
+            q4: "a",
+            q5: "a"
+            // Add more correct answers for each question
+        };
+
+        // Initialize the score
+        let score = 0;
+
+        // Loop through each question
+        for (const questionId in correctAnswers) {
+            const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+
+            if (selectedOption) {
+                const selectedValue = selectedOption.value;
+
+                if (selectedValue === correctAnswers[questionId]) {
+                    score++;
+                }
+            }
+        }
+
+        if (score === 1) {
+            window.location.href = "teapages/blacktea.html"; 
+        } else if (score === 2) {
+            window.location.href = "teapages/greentea.html"; 
+        }
+        else if (score === 3) {
+            window.location.href = "teapages/hibicustea.html"; 
+        }
+        else if (score === 4) {
+            window.location.href = "teapages/oolongtea.html"; 
+        }
+        else{
+            window.location.href = "teapages/whitetea.html"
+        }
+    });
+</script>
